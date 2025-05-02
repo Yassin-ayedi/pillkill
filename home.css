@@ -1,0 +1,150 @@
+body{
+    background-color: rgba(248, 249, 250, 1);
+    margin: 0;
+
+}
+
+.user-box {
+    background-color: rgb(27, 201, 186);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+ }
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+#logout {
+    background-color: #dc3545; /* Bootstrap-like red */
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+  
+.site-name {
+    font-size: 30px;
+    font-weight: bold;
+}  
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.info{
+
+    padding: 12px 20px;
+    margin : 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#sign{
+    background-color: rgba(117, 157, 184, 1);
+}
+
+#log{
+    background-color: rgb(77, 150, 198);
+}
+
+.page-info {
+    background: linear-gradient(to right, #212c92, #81dd9b);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    padding: 60px 20px;  
+    
+    
+
+}
+
+.service-button {
+
+
+    display: flex;                  
+    flex-direction: column;          
+    align-items: center;             
+    justify-content: center;  
+
+    color: black;
+    padding: 10px 90px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+    background-color: rgb(255, 255, 255);
+}
+  
+.service-button:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+
+
+.service-title {
+    font-size: 18px;               
+    font-weight: 600;              
+    color: #111;                   
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .service-desc {
+    font-size: 14px;              
+    color: #656363;                   
+    text-align: center;
+    line-height: 1.2;
+    max-width: 200px;              
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+  
+  
+  
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(66, 133, 244, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #4285f4;
+}
+
+
+

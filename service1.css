@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #17AED0;
+  padding: 15px 30px;
+  color: white;
+}
+
+.icon-button{
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-box {
+  background-color: white;
+  color: #17AED0;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.main {
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 20px;
+  padding-bottom: 60px;
+}
+
+.heading {
+  font-size: 28px;
+  color: #17AED0;
+  margin-bottom: 10px;
+}
+
+.service-desc{
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.add-btn {
+  background-color: #21BE4E;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.add-btn:hover {
+  background-color: #1aa746;
+}
+
+.upload-area {
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #fff;
+  cursor: pointer;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.upload-area i {
+  font-size: 30px;
+  color: #17AED0;
+  margin-bottom: 10px;
+}
+
+.upload-area p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.add-section{
+  display: none; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.add-section-box {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.add-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.separator {
+  border: 1px solid #dcd6d6;
+  margin-bottom:0.6rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Progress Circles Carousel */
+.progress-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+}
+
+.progress-tracker {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.progress-circle-container {
+  min-width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.progress-circle {
+  width: 180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.med-name {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #17AED0;
+}
+
+.progress-svg {
+  width: 100%;
+  height: auto;
+}
+
+.bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.progress {
+  fill: none;
+  stroke: #17AED0;
+  stroke-width: 3.8;
+  stroke-dasharray: 0, 100;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dasharray 0.3s ease;
+}
+
+.percentage {
+  fill: #333;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.progress-label {
+  margin-top: 10px;
+  color: #444;
+  font-size: 14px;
+}
+
+.last-reset {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background: #17AED0;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #17AED0;
+}
+
+.carousel-arrow.left {
+  left: 10px;
+}
+
+.carousel-arrow.right {
+  right: 10px;
+}
+
+/* Swipe instructions */
+.swipe-instruction {
+  color: #777;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Action buttons */
+.circle-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.action-btn {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+}
+
+.increment-btn {
+  background-color: #21BE4E;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .swipe-instruction {
+    display: block;
+  }
+  .carousel-arrow {
+    display: none;
+  }
+}
+
+/* Reset notification */
+.reset-notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #17AED0;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  opacity: 1;
+  transition: opacity 1s;
+}

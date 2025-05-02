@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+
+
+
+
+
+    .progress-circle {
+      width: 180px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .med-name {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #17AED0;
+    }
+
+    .progress-svg {
+      width: 100%;
+      height: auto;
+    }
+
+    .bg {
+      fill: none;
+      stroke: #eee;
+      stroke-width: 3.8;
+    }
+
+    .progress {
+      fill: none;
+      stroke: #17AED0;
+      stroke-width: 3.8;
+      stroke-dasharray: 0, 100;
+      stroke-linecap: round;
+      transform: rotate(-90deg);
+      transform-origin: center;
+      transition: stroke-dasharray 0.3s ease;
+    }
+
+    .percentage {
+      fill: #333;
+      font-size: 0.5em;
+      text-anchor: middle;
+    }
+
+    .progress-label {
+      margin-top: 10px;
+      color: #444;
+      font-size: 14px;
+    }
+
+    .circle-actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .action-btn {
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.2s;
+    }
+
+    .action-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .increment-btn {
+      background-color: #21BE4E;
+      color: white;
+    }
+
+    .delete-btn {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="progress-circle">
+        <svg class="progress-svg" viewBox="0 0 36 36">
+          <path class="bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <path class="progress" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+          <text x="18" y="20.35" class="percentage">2/2</text>
+        </svg>
+        <p class="med-name">med</p>
+        <p class="progress-label">20mg</p>
+        <div class="circle-actions">
+          <button class="action-btn increment-btn" data-med-id="${med.id}">
+            <i class="fas fa-plus"></i>
+          </button>
+          <button class="action-btn delete-btn" data-med-id="${med.id}">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+        <p class="last-reset">Last reset:12/10/2004</p>
+      </div>
+</body>
+</html>

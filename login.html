@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enter.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="home.php" class="icon-button">
+            <div class="logo">
+                <img src="site_icon.png" alt="Logo">
+                <span class="site-name">PillKill</span>
+            </div>
+        </a>  
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="form-box">
+                <h2 class="form-title">Welcome Back</h2>
+                <p class="form-subtitle">Login to your account</p>
+                <form action="login.php" method="POST">
+                    <div class="input-group">
+                      <label for="email">email</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                  
+                    <div class="input-group">
+                      <label for="password">Password</label>
+                      <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                  
+                    <button type="submit" class="login-button">Login</button>
+                  
+                    <div class="signup-link">
+                      Don't have an account? <a href="signup.html">Sign up</a>
+                    </div>
+                  </form>  
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<script src="login.js"></script>
+
+  
+</html>
